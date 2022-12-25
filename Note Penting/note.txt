@@ -1,0 +1,10 @@
+1. untuk membuat model baru dengan nama Post:
+php artisan make:model Post -m
+
+2. untuk membuat controller baru dengan nama PostController:
+php artisan make:controller PostController
+
+3. untuk membuatkan link dari folder STORAGE ke dalam folder PUBLIC di laravel:
+php artisan storage:link
+
+4.
