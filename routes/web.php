@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WargaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/warga', [WargaController::class, 'index'] );
+Route::get('/warga/create', [WargaController::class, 'create'] );
+Route::post('/warga/store', [WargaController::class, 'store'] );
+Route::get('/warga/{idWarga}/edit', [WargaController::class, 'edit'] );
+Route::put('/warga/{idWarga}', [WargaController::class, 'update'] );
+Route::delete('/warga/{idWarga}', [WargaController::class, 'destroy'] );
 
 //route resource
 Route::resource('/posts', \App\Http\Controllers\PostController::class);

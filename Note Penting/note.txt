@@ -1,5 +1,6 @@
 1. untuk membuat model baru dengan nama Post:
-php artisan make:model Post -m
+php artisan make:model Post (tanpa beserta migration)
+php artisan make:model Post -m (beserta migration)
 
 2. untuk membuat controller baru dengan nama PostController:
 php artisan make:controller PostController
@@ -7,4 +8,8 @@ php artisan make:controller PostController
 3. untuk membuatkan link dari folder STORAGE ke dalam folder PUBLIC di laravel:
 php artisan storage:link
 
-4.
+4. untuk membuat migration/tabel baru dengan nama Warga:
+php artisan make:migration create_warga_table
+
+5. untuk membuat controller baru dengan nama Warga:
+php artisan make:controller WargaController
