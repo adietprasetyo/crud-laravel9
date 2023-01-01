@@ -13,3 +13,10 @@ php artisan make:migration create_warga_table
 
 5. untuk membuat controller baru dengan nama Warga:
 php artisan make:controller WargaController
+
+6. Langkah membuat auth login captcha google:
+- Install: composer require laravel/ui
+- Install: php artisan ui bootstrap --auth
+- Install: npm Install
+- Running dua: npm run dev && php artisan serve. Jika sudah berjalan, lalu matikan keduanya
+- Install captcha google: composer require anhskohbo/no-captcha
